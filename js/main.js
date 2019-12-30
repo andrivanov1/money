@@ -60,7 +60,7 @@ expensesBtn.addEventListener('click', function() {
         }
     }
     expensesValue.textContent = sum;
-})
+});
 
 optionalExpensesBtn.addEventListener('click', function() {
     for (let i = 0; i < optionalExpensesItem.length; i++) {
@@ -110,10 +110,10 @@ sumValue.addEventListener('input', function() {
             percent = +persentValue.value;
 
         appData.monthIncome = sum/100/12*percent;
-        appData.yaerIncome = sum/100*percent;
+        appData.yearIncome = sum/100*percent;
 
         monthSavingsValue.textContent = appData.monthIncome.toFixed(1);
-        yearSavingsValue.textContent = appData.yaerIncome.toFixed(1);
+        yearSavingsValue.textContent = appData.yearIncome.toFixed(1);
     }
 });
 
@@ -124,10 +124,10 @@ persentValue.addEventListener('input', function() {
                 percent = +persentValue.value;
     
             appData.monthIncome = sum/100/12*percent;
-            appData.yaerIncome = sum/100*percent;
+            appData.yearIncome = sum/100*percent;
     
             monthSavingsValue.textContent = appData.monthIncome.toFixed(1);
-            yearSavingsValue.textContent = appData.yaerIncome.toFixed(1);
+            yearSavingsValue.textContent = appData.yearIncome.toFixed(1);
         }
     }
 });
